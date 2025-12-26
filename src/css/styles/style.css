@@ -16714,3 +16714,81 @@ img {
 .no-cursor {
   cursor: not-allowed;
 }
+
+/* Hot collections section styles */
+#container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 5px;
+}
+
+.nft_wrap {
+  height: 100%;
+}
+
+.nft_wrap a {
+  display: block;
+  height: 100%;
+}
+
+/* Skeleton for hot collections */
+.skeleton-wrap {
+  width: 100%;
+  height: 200px;
+  background-color: #DEDCDC;
+  color: #DEDCDC;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 60px;
+  background-color: #DEDCDC;
+  color: #DEDCDC;
+  border-radius: 100%;
+}
+
+
+.skeleton-title {
+  padding-top: 4px;
+  display: inline-block;
+  margin: 5px auto;
+  background-color: #DEDCDC;
+  color: #DEDCDC;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton-wrap,
+.skeleton-img,
+.skeleton-title {
+  position: relative;
+  overflow: hidden;
+  background-color: #DEDCDC;
+}
+
+.skeleton-wrap::after,
+.skeleton-img::after,
+.skeleton-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    90deg,
+    hsla(0, 0%, 100%, 0) 0%,
+    hsla(0, 0%, 100%, 0.2) 20%,
+    hsla(0, 0%, 100%, 0.5) 60%,
+    hsla(0, 0%, 100%, 0) 100%
+  );
+  transform: translateX(-100%);
+  animation: shimmer 2s infinite;
+}
