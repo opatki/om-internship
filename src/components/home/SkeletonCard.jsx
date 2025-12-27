@@ -36,5 +36,18 @@ const SkeletonNI = () => (
   </div>
 );
 
+const SkeletonTS = () => (
+  <li>
+    <div className="author_list_pp">
+        <div className="lazy pp-author skeleton-img"></div>
+        <i className="fa fa-check"></i>
+    </div>
+    <div className="author_list_info">
+      <h4 className="skeleton-title top__seller--title">Placeholder</h4><br/>
+      <h4 className="skeleton-title top__seller--title">hold</h4>
+    </div>
+  </li>
+);
 
-export { SkeletonHC, SkeletonNI }
+
+export { SkeletonHC, SkeletonNI, SkeletonTS }

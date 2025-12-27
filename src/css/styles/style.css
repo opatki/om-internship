@@ -16778,6 +16778,11 @@ img {
   width: 25%;
 }
 
+.top__seller--title {
+  padding-top: 0;
+  margin-bottom: -5px;
+}
+
 /* Skeleton Carousel Responsiveness */
 #items__carousel {
   display: flex;
