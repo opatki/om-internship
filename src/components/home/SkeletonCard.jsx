@@ -49,5 +49,15 @@ const SkeletonTS = () => (
   </li>
 );
 
+const SkeletonExplore = () => (
+  <div className="d-item col-lg-3 col-md-6 col-sm-6 col-xs-12"
+    style={{ display: "block", backgroundSize: "cover" }}>
+      <div className="skeleton-wrap skeleton__explore nft__item">
 
-export { SkeletonHC, SkeletonNI, SkeletonTS }
+      </div>
+  </div>
+);
+
+
+
+export { SkeletonHC, SkeletonNI, SkeletonTS, SkeletonExplore }
