@@ -16735,6 +16735,9 @@ img {
 .skeleton-wrap {
   width: 100%;
   height: 200px;
+}
+
+.skeleton-img, .skeleton-wrap, .skeleton-title {
   background-color: #DEDCDC;
   color: #DEDCDC;
 }
@@ -16742,8 +16745,6 @@ img {
 .skeleton-img {
   width: 100%;
   height: 50px;
-  background-color: #DEDCDC;
-  color: #DEDCDC;
   border-radius: 100%;
 }
 
@@ -16751,8 +16752,6 @@ img {
   padding-top: 4px;
   display: inline-block;
   margin: 5px auto;
-  background-color: #DEDCDC;
-  color: #DEDCDC;
 }
 
 .taller-skeleton {
@@ -16766,6 +16765,10 @@ img {
 .nft__likes-skeleton {
   margin-top: 20px;
   padding: 0
+}
+
+.skeleton__explore {
+  height: 420px;
 }
 
 #items__carousel {
