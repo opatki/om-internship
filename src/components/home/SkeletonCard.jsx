@@ -1,10 +1,10 @@
-const SkeletonCard = () => (
-  <div id="container" className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+const SkeletonHC = () => (
+  <div className="item-container col-lg-3 col-md-6 col-sm-6 col-xs-12">
     <div className="nft_coll">
       <div className="nft_wrap skeleton-wrap">
       </div>
       <div className="nft_coll_pp">
-          <div className="lazy pp-coll skeleton-img"></div>
+        <div className="lazy pp-coll skeleton-img"></div>
         <i className="fa fa-check"></i>
       </div>
       <div className="nft_coll_info">
@@ -15,4 +15,26 @@ const SkeletonCard = () => (
   </div>
 );
 
-export default SkeletonCard;
+
+const SkeletonNI = () => (
+  <div className="item-container col-lg-3 col-md-6 col-sm-6 col-xs-12">
+    <div className="nft__item">
+      <div className="author_list_pp">
+          <div className="lazy pp-coll skeleton-img"></div>
+          <i className="fa fa-check"></i>
+      </div>
+
+      <div className="nft__item_wrap">
+        <div className="lazy pp-coll skeleton-wrap taller-skeleton"></div>
+      </div>
+      <div className="nft__item_info">
+        <h3 className="skeleton-title">Big Placeholder</h3><br/>
+        <h4 className="skeleton-title nft__price-skeleton">PHolder</h4>
+        <h4 className="nft__item_like skeleton-title nft__likes-skeleton">hold</h4>
+      </div>
+    </div>
+  </div>
+);
+
+
+export { SkeletonHC, SkeletonNI }
