@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SkeletonCard from "./SkeletonCard";
+import { SkeletonHC } from "./SkeletonCard";
 import axios from "axios";
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -18,7 +18,6 @@ const HotCollections = () => {
     try {
       setLoading(true); 
       const res = await axios.get('https://us-central1-nft-cloud-functions.cloudfunctions.net/hotCollections');
-      console.log(res.data);
       setHotCollections(res.data);
       setLoading(false);
     } catch(err) {
@@ -62,7 +61,7 @@ const HotCollections = () => {
               {loading && (
                 <OwlCarousel {...options}>
                   {[0, 1, 2, 3, 4].map((_, index) => (
-                       <SkeletonCard key={`skeleton-${index}`} />
+                       <SkeletonHC key={`skeleton-${index}`} />
                   ))}
                 </OwlCarousel>
               )}
@@ -71,7 +70,7 @@ const HotCollections = () => {
               {!loading && hotCollections.length > 0 && (
                 <OwlCarousel {...options}>
                   {(hotCollections).map((collection, idx) => (
-                    <div id="container" className="col-lg-3 col-md-6 col-sm-6 col-xs-12" key={`collection-${collection.id}-${idx}`}>
+                    <div id="container" className="item-container col-lg-3 col-md-6 col-sm-6 col-xs-12" key={`collection-${collection.id}-${idx}`}>
                       <div className="nft_coll">
                         <div className="nft_wrap">
                           <Link to={`/item-details/${collection.nftId}`}>
