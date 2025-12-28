@@ -79,4 +79,62 @@ const SkeletonAuthor = () => (
   </div>
 )
 
-export { SkeletonHC, SkeletonNI, SkeletonTS, SkeletonExplore, SkeletonAuthor }
+const SkeletonDetails = () => (
+  <>
+    <div className="col-md-6 text-center skeleton">
+    </div>
+    <div className="col-md-6">
+      <div className="item_info skeleton-margin">
+        <h3 className="skeleton-title skeleton-padded">A lot of Placeholder Text is here</h3>
+
+        <div className="item_info_counts">
+          <div className="item_info_views icon-shimmer">
+             
+          </div>
+          <div className="item_info_like icon-shimmer">
+          </div>
+        </div>
+        <p className="skeleton skeleton-padded">
+          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
+          illo inventore veritatis et quasi architecto beatae vitae
+          dicta sunt explicabo.
+        </p>
+        <div className="d-flex flex-row ">
+          <div className="mr40">
+            <h6>Owner</h6>
+            <div className="item_author">
+              <div className="author_list_pp">
+                  <div className="skeleton-img skeleton__profilepic"></div>
+                  <i className="fa fa-check"></i>
+              </div>
+              <h4 className="author_list_info skeleton-title"> 
+              </h4>
+            </div>
+          </div>
+          <div></div>
+        </div>
+        <div className="de_tab tab_simple">
+          <div className="de_tab_content">
+            <h6>Creator</h6>
+            <div className="item_author">
+              <div className="author_list_pp">
+                  <div className="skeleton-img skeleton__profilepic"></div>
+                  <i className="fa fa-check"></i>
+              </div>
+              <h4 className="author_list_info skeleton-title"> 
+              </h4>
+            </div>
+          </div>
+          <div className="spacer-40"></div>
+          <h6>Price</h6>
+          <div className="nft-item-price">
+            <h4 className="author_list_info skeleton-title"> 
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
+)
+
+export { SkeletonHC, SkeletonNI, SkeletonTS, SkeletonExplore, SkeletonAuthor, SkeletonDetails }
