@@ -58,6 +58,25 @@ const SkeletonExplore = () => (
   </div>
 );
 
+const SkeletonAuthor = () => (
+  <div className="d_profile de-flex skeleton-margin">
+    <div className="de-flex-col">
+      <div className="profile_avatar">
+        <div className="skeleton-img skeleton-profile-img"></div>
+        <i className="fa fa-check"></i>
+        <div className="author__skeleton--container">
+          <h4 className="skeleton-title skeleton-authorname">Its Placeholder Text  </h4><br />
+          <h4 className="skeleton-title skeleton-tag">Placeholder text here</h4><br />
+          <h4 className="skeleton-title skeleton-authorname skeleton-thinner">Its   Placeholder   Text   here</h4>
+        </div>
+      </div>
+    </div>
+    <div className="profile_follow de-flex">
+      <div className="de-flex-col">
+          <h4 className="skeleton-title skeleton-padded">Placeholder text</h4>
+      </div>
+    </div>
+  </div>
+)
 
-
-export { SkeletonHC, SkeletonNI, SkeletonTS, SkeletonExplore }
+export { SkeletonHC, SkeletonNI, SkeletonTS, SkeletonExplore, SkeletonAuthor }
