@@ -32,7 +32,7 @@ const TopSellers = () => {
               <div className="small-border bg-color-2"></div>
             </div>
           </div>
-          <div className="col-md-12">
+          <div data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-back" className="col-md-12">
             <ol className="author_list">
               {/* Loading State */}
               {loading && (
