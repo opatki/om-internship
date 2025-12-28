@@ -119,7 +119,7 @@ const ExploreItems = () => {
       ))}
       
       {(!loading && visible < exploreItems.length) && (
-        <div className="col-md-12 text-center">
+        <div data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-back" className="col-md-12 text-center">
           <button onClick={showMoreItems} id="loadmore" className="btn-main lead">
             Load more
           </button>
